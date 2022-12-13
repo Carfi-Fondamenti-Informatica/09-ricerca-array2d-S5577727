@@ -3,18 +3,21 @@
 using namespace std;
 
 
-int main(){
-    char arraylista[10][20];
-    char arraynome[20];
+int main()
+{
+    char lista[10][20];
+    char nome[20];
 
-    for (int i=0; i<10; i++){
-        cin >> arraylista[i];
+    for (int i = 0; i < 10; i++){
+        cin >> lista[i];
     }
-    cin >> arraynome;
+    cin >> nome;
 
-    if (controllo(arraylista, arraynome)==100){
-        cout << "non presente";
+    int pos = controllo(lista, nome);
+    if (pos != -1) {
+        cout << pos;
     }
-    else cout << controllo(arraylista, arraynome);
+    else cout << "Non presente" << endl;
+
     return 0;
 }
