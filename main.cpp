@@ -3,21 +3,20 @@
 using namespace std;
 
 
-int main()
-{
-    char lista[10][20];
-    char nome[20];
-
-    for (int i = 0; i < 10; i++){
-        cin >> lista[i];
+int main(){
+    char elenco[10][20];
+    for(int i=0; i<10; i++) {
+        cin >> elenco[i];
     }
+
+    char nome[20];
     cin >> nome;
 
-    int pos = controllo(lista, nome);
-    if (pos != -1) {
-        cout << pos;
-    }
-    else cout << "Non presente" << endl;
+    int posizione = cercaNome(elenco, nome);
+    if(posizione == -1)
+        cout << nome << " non presente";
+    else
+        cout << posizione;
 
     return 0;
 }
