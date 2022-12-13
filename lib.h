@@ -1,4 +1,4 @@
-#ifndef UNTITLED3_LIB_H
-#define UNTITLED3_LIB_H
-int controllo( char arraylista[10][20], char arraynome[20]);
-#endif //UNTITLED3_LIB_H
+#ifndef ESERCITAZIONE9_LIB_H
+#define ESERCITAZIONE9_LIB_H
+int controllo(char lista[10][20], const char nome[20]);
+#endif //ESERCITAZIONE9_LIB_H
