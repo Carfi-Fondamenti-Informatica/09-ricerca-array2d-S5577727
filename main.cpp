@@ -13,10 +13,11 @@ int main(){
     cin >> nome;
 
     int posizione = cercaNome(elenco, nome);
-    if(posizione == -1)
-        cout << nome << " non presente";
-    else
+    if(posizione == -1){
+        cout << nome << "non presente";
+    }
+    else{
         cout << posizione;
-
+    }
     return 0;
 }
